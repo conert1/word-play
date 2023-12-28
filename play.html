@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/three.js"></script>
+    <script src="./js/orbitcontrols.js"></script>
+    <title>js web</title>
+  </head>
+  <body>
+    <div class="word">
+        <p id="firstP">Click on start game to play</p>
+    </div>
+
+    <section class="threejs-section">
+      <!-- Section where Three.js scene will be added -->
+      <div id="threejs-container"></div>
+    </section>
+    
+    <!-- <div class="graphic">
+        <p>This is where the graphic hangman is going to be</p>
+    </div> -->
+
+    <!-- <div class="words">
+        <label for="styled-input">Enter Your Guess then press ENTER: </label><br>
+    <textarea id="editor" name="editor" rows="1" cols="5"></textarea>
+    <input type="text" id="styled-input" name="styled-input" class="line-style" size="1"> 
+
+    </div> -->
+
+    <div class="EnterButton">
+      
+      <a href="#" onclick="load(); return false;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Start / Restart
+    </a>
+    </div>
+    
+    <!-- <div class="button">
+        <button onclick="processing('a')">Enter</button>
+        </div> -->
+
+    <div class="first-row row my-2 justify-content-center mt-4">
+      <div class="alphabet-button mr-2">
+        <p></p>
+      </div>
+      <div class="alphabet-button mr-2">
+      <button onclick="processing('q')">Q</button>
+    </div> 
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('w')">W</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('e')">E</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('r')">R</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('t')">T</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('y')">Y</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('u')">U</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('i')">I</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('o')">O</button>
+    </div>
+    <div class="alphabet-button mr-4">
+      <button onclick="processing('p')">P</button>
+    </div>
+    <div class="alphabet-button mr-2">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="second-row row my-2 justify-content-center">
+     <div class="alphabet-button mr-2">
+      <button onclick="processing('a')">A</button>
+    </div> 
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('s')">S</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('d')">D</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('f')">F</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('g')">G</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('h')">H</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('j')">J</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('k')">K</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('l')">L</button>
+    </div>
+    </div>
+    
+    <div class="third-row row justify-content-center">
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('z')">Z</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('x')">X</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('c')">C</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('v')">V</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('b')">B</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('n')">N</button>
+    </div>
+    <div class="alphabet-button mr-2">
+      <button onclick="processing('m')">M</button>
+    </div>
+    <div class="alphabet-button col-md-1">
+      <p></p>
+    </div>
+    </div>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/words.js"></script>
+  </body>
