@@ -143,7 +143,7 @@ var GuessWord;
 
 function getName(){
     // find which difficulty was selected
-  var userinput = document.getElementById('name-input').value;
+//   var userinput = document.getElementById('name-input').value;
   location.href = "play.html";
     // Storing the selected value in localStorage
 const radioButtons = document.querySelectorAll('input[name="difficulty"]');
@@ -162,6 +162,7 @@ localStorage.setItem('selectedDifficulty', selectedValue);
 
 function load(){
     numberOfTurns = 6;
+    unhideAllButtons()
     scene.remove(cylinder2);
     scene.remove(headSphere);
     scene.remove(bodySphere);
@@ -213,6 +214,8 @@ function blank(){
 // }
 
 function processing(alphabet){ 
+
+
     var count;
     count = numberOfTurns;
     blankStart = blank()
@@ -258,6 +261,10 @@ function processing(alphabet){
    }
    let p = document.querySelector('.word');
    p.innerHTML = word.join('');
+
+   const button = document.getElementById(alphabet);
+   // Hied the button 
+   button.style.opacity = 0;
 }
 
 function win(){
@@ -345,3 +352,13 @@ function incorrect(){
         }, 1100);
     });
 }
+
+function unhideAllButtons() {
+    // Get all the buttons (assuming they have a common class name)
+    const buttons = document.querySelectorAll('.alphabet-button button');
+  
+    // Loop through each button and restore its original opacity
+    buttons.forEach(button => {
+      button.style.opacity = 1;
+    });
+  }
